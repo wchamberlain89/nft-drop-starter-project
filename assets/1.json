@@ -1,0 +1,19 @@
+{
+  "name": "Gabumon",
+  "symbol": "",
+  "image": "1.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "4t3VGujcQ3VqqyVe95kVrf9Rqtj323hAm6NexTozXNhB",
+        "share": 100
+      }
+    ]
+  }
+}
