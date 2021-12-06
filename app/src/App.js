@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
 import CandyMachine from './CandyMachine';
 
@@ -11,7 +11,7 @@ const App = () => {
   const [walletAddress, setWalletAddress] = useState(null);
 
   // Actions
-  const checkIfWalletIsConnected = async () => {
+  const checkIfWalletIsConnected = useCallback(async () => {
     try {
       const { solana } = window;
 
@@ -35,7 +35,7 @@ const App = () => {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, []);
 
   const connectWallet = async () => {
     const { solana } = window;
@@ -62,7 +62,7 @@ const App = () => {
     };
     window.addEventListener('load', onLoad);
     return () => window.removeEventListener('load', onLoad);
-  }, []);
+  }, [checkIfWalletIsConnected]);
 
   return (
     <div className="App">
