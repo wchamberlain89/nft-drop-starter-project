@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 30px 0 30px;
   color: white;
   position: relative;
@@ -51,7 +52,7 @@
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 10px;
+  border-radius: 3px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
@@ -65,7 +66,8 @@
 }
 
 .mint-button {
-  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  color:black;
+  background: -webkit-linear-gradient(left, #FEE400, #FFC777);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-left: 10px;
